@@ -1,0 +1,25 @@
+@import "../../../../../dist/scss/variables.scss";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: $danger-color;
+    font-size: 1rem;
+    font-weight: 800;
+    color: $secondary-text-color;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $danger-color-alt;
+    }
+  }
+}
