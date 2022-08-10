@@ -1,1 +1,6 @@
-<input type="text" placeholder="Enter your tasks here..." />
+<input
+  type="text"
+  placeholder="Enter your tasks here..."
+  [(ngModel)]="task"
+  (keyup.enter)="submitTask()"
+/>
